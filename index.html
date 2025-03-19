@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web前端技术及应用_实验一</title>
+    <style>
+        /* 设置全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            /* 设置字体 */
+            background-color: #f4f4f4;
+            /* 设置背景颜色 */
+            margin: 0;
+            /* 去除默认外边距 */
+            padding: 0;
+            /* 去除默认内边距 */
+            display: flex;
+            /* 使用Flexbox布局 */
+            flex-direction: column;
+            /* 垂直排列子元素 */
+            align-items: center;
+            /* 子元素居中对齐 */
+        }
+
+        /* 设置标题样式 */
+        h1,
+        h2 {
+            color: #333;
+            /* 设置标题颜色 */
+        }
+
+        /* 设置链接样式 */
+        a {
+            color: skyblue;
+            /* 设置链接颜色 */
+            text-decoration: none;
+            /* 去除下划线 */
+            font-weight: bold;
+            /* 设置字体加粗 */
+            transition: color 0.3s ease;
+            /* 设置颜色过渡效果 */
+        }
+
+        a:hover {
+            color: seagreen;
+            /* 设置鼠标悬停时的颜色 */
+        }
+
+        /* 设置列表样式 */
+        ul,
+        ol {
+            padding: 0;
+            /* 去除内边距 */
+            list-style-position: inside;
+            /* 设置列表项标记位置 */
+        }
+
+        li {
+            margin: 5px 0;
+            /* 设置外边距 */
+            padding: 5px;
+            /* 设置内边距 */
+            list-style-type: square;
+            /* 设置列表项标记类型 */
+        }
+
+        /* 设置表单标题样式 */
+        .title {
+            font-weight: bold;
+            /* 设置字体加粗 */
+            text-align: center;
+            /* 设置文本居中 */
+        }
+
+        /* 设置表单容器样式 */
+        .form-container {
+            background-color: #fff;
+            /* 设置背景颜色 */
+            padding: 20px;
+            /* 设置内边距 */
+            border-radius: 8px;
+            /* 设置圆角 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* 设置阴影 */
+            margin-top: 20px;
+            /* 设置顶部外边距 */
+            width: 400px;
+            /* 设置宽度 */
+        }
+
+        .form-container h2 {
+            margin-top: 0;
+            /* 去除顶部外边距 */
+        }
+
+        .form-container table {
+            width: 100%;
+            /* 设置表格宽度 */
+            border-collapse: collapse;
+            /* 合并表格边框 */
+        }
+
+        .form-container table,
+        .form-container th,
+        .form-container td {
+            border: 1px solid #ddd;
+            /* 设置边框 */
+        }
+
+        .form-container th,
+        .form-container td {
+            padding: 10px;
+            /* 设置内边距 */
+            text-align: left;
+            /* 设置文本左对齐 */
+        }
+
+        /* 设置输入框和选择框样式 */
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container select {
+            width: calc(100% - 22px);
+            /* 设置宽度 */
+            padding: 10px;
+            /* 设置内边距 */
+            margin: 5px 0;
+            /* 设置上下外边距 */
+            border: 1px solid #ccc;
+            /* 设置边框 */
+            border-radius: 4px;
+            /* 设置圆角 */
+        }
+
+        /* 设置提交和重置按钮样式 */
+        .form-container input[type="submit"],
+        .form-container input[type="reset"] {
+            width: 48%;
+            /* 设置宽度 */
+            padding: 10px;
+            /* 设置内边距 */
+            margin: 5px 1%;
+            /* 设置外边距 */
+            border: none;
+            /* 去除边框 */
+            border-radius: 4px;
+            /* 设置圆角 */
+            background-color: skyblue;
+            /* 设置背景颜色 */
+            color: white;
+            /* 设置字体颜色 */
+            font-weight: bold;
+            /* 设置字体加粗 */
+            cursor: pointer;
+            /* 设置鼠标指针样式 */
+            transition: background-color 0.3s ease;
+            /* 设置背景颜色过渡效果 */
+        }
+
+        .form-container input[type="submit"]:hover,
+        .form-container input[type="reset"]:hover {
+            background-color: seagreen;
+            /* 设置鼠标悬停时的背景颜色 */
+        }
+
+        /* 设置提交按钮容器样式 */
+        .submit {
+            text-align: center;
+            /* 设置文本居中 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 标题图片 -->
+    <div><img src="./Img/a51efb634fdae498c0631ccc947f98c.png" alt="标题图片"></div>
+    <!-- 诗歌标题 -->
+    <h1>瑞鹤仙·秋感</h1>
+    <!-- 作者信息 -->
+    <h2>吴文英(宋)</h2>
+    <!-- 详情页面链接 -->
+    <a href="https://www.gushiwen.cn/shiwenv_ebf03a836b95.aspx" target="_blank">详情页面</a>
+    <!-- 诗歌内容 -->
+    <ul>
+        <li>泪荷抛碎璧。正漏云筛雨，斜捎窗隙。林声怨秋色。</li>
+        <li>对小山不迭，寸眉愁碧。凉欺岸帻。暮砧催、银屏翦尺。</li>
+        <li>最无聊、燕去堂空，旧幕暗尘罗额。</li>
+        <li>
+            <ol>
+                <li>行客。西园有分，断柳凄花，似曾相识。西风破屐。</li>
+                <li>林下路，水边石。念寒蛩残梦，归鸿心事，那听江村夜笛。</li>
+                <li>看雪飞、苹底芦梢，未如鬓白。</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- 注册表单 -->
+    <div class="form-container">
+        <h2>注册页面</h2>
+        <form action="http://8.152.192.120/ex1/" method="post">
+            <table>
+                <tr class="title">
+                    <td colspan="2">用户注册</td>
+                </tr>
+                <tr>
+                    <td>学号</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>确认密码</td>
+                    <td><input type="password" name="passwordconfirm"></td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td>
+                        <input type="radio" name="sex" value="male"> 男
+                        <input type="radio" name="sex" value="female"> 女
+                    </td>
+                </tr>
+                <tr>
+                    <td>技术</td>
+                    <td>
+                        <input type="checkbox" name="tech" value="html"> HTML
+                        <input type="checkbox" name="tech" value="java"> Java
+                        <input type="checkbox" name="tech" value="css"> CSS
+                    </td>
+                </tr>
+                <tr>
+                    <td>国家</td>
+                    <td>
+                        <select name="country">
+                            <option value="china">中国</option>
+                            <option value="usa">美国</option>
+                            <option value="uk">英国</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="submit">
+                    <td colspan="2">
+                        <input type="submit" value="提交">
+                        <input type="reset" value="重置">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
