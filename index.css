@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    /* 设置字体 */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 子元素居中对齐 */
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+a {
+    color: skyblue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* 设置颜色过渡效果 */
+}
+
+a:hover {
+    color: seagreen;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 设置阴影 */
+    margin-top: 20px;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+}
+
+.form-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-container table,
+.form-container th,
+.form-container td {
+    border: 1px solid #ddd;
+    /* 设置边框 */
+}
+
+.form-container th,
+.form-container td {
+    padding: 10px;
+    text-align: left;
+    /* 设置文本左对齐 */
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container select {
+    width: 270px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 4px;
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    /* 设置鼠标指针样式 */
+    transition: background-color 0.3s ease;
+    /* 设置过渡效果 */
+}
+
+.form-container input[type="submit"]:hover,
+.form-container input[type="reset"]:hover {
+    background-color: seagreen;
+}
+
+.submit {
+    text-align: center;
+}
+
+dt {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-bottom: 10px;
+}
